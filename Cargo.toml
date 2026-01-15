@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "contracts/trading",
+    "contracts/academy",
+    "contracts/social_rewards",
+    "contracts/messaging",
+    "shared",
+]
+resolver = "2"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
