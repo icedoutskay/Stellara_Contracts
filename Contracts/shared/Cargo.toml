@@ -5,3 +5,8 @@ edition = "2021"
 
 [dependencies]
 soroban-sdk = { version = "20.5.0", features = ["contract"] }
+
+[dev-dependencies]
+proptest = "1.4"
+soroban-sdk = { version = "20.4.0", features = ["testutils"] }
+
